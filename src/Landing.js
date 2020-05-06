@@ -2,41 +2,33 @@ import React from 'react';
 import './main.css'; 
 import './carousel.scss';
 import $ from 'jquery'; 
+import Toggle from './Toggle';
+import FullscreenNav from './FullscreenNav'; 
 
 
 class Landing extends React.Component{
+
     constructor(props){
         super(props)
-        console.log($('#header'));
-
         let navbar = $('#header');
         let menu = document.getElementById('nav-menu');
         let windowPos = window.scrollY;
         let navbarTop = navbar.offSetTop; 
         let scrolled = windowPos> navbarTop;
+        this.openNav = this.openNav.bind(this); 
         
-        if(scrolled){
-            navbar.addClass('fixed');
-        }
-        else{ 
-            navbar.removeClass('fixed');
-        }
-
-        let openNav = (e) =>{
-            e.preventDefault(); 
-            document.getElementById('menu').style.visibility = 'visible'; 
-        }
-
-        let closeNav = () => { 
-            document.getElementById('menu').style.visibility = 'hidden'; 
- 
+        // state for fullscreen modal
+        this.state = { 
+            isFull: false,
         }
 
 
     }
+     openNav = (e) =>{
+         e.preventDefault(); 
+        document.getElementById('menu').classList.toggle('visible'); 
 
-  
-
+    }
 
     render(){
         
@@ -44,17 +36,49 @@ class Landing extends React.Component{
         return(
             <div id="wrapper">
 
-            {/* <!-- Header --> */}
-                <header id="header" className="reveal alt fixed">
-                    <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
-                     {/* Right Nav Menu */}
-                    <nav onClick="openNav()" id="nav-menu">
-                        <a href="#menu">Menu</a>
-                    </nav>
-                </header>
+                {/* Nav Overlay */}
 
-            {/* <!-- Menu --> */}
+
+                    <Toggle render={({on, toggle})=> (
+                        
+                        <div>
+                    
+                                {on && <FullscreenNav toggle={toggle} />}
+
+                                           {/* <!-- Header --> */}
+                <header id="header" className="reveal alt fixed">
+                        <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
+
+
+
+                                {/* Right Nav Menu Button */}
+                                <nav id="nav-menu">
+                                    <a href="#menu" onClick={toggle}>Menu</a>
+                                </nav>
+                            </header>
+
+                        </div>
+                    
+                    )
+
+
+
+                }
+
+
                 
+                />
+               
+                                
+
+
+ 
+                        
+            {/* <!-- Menu --> */}
+
+
+
+                             
 
             {/* <!-- Banner --> */}
                 <section id="banner" className="major" style={{backgroundPosition: 'center 0px'}}>
@@ -65,18 +89,10 @@ class Landing extends React.Component{
 
                         </header>
 
-                    <nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+
+            
+
+
 
 
         <div className="content">

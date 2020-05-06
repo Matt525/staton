@@ -3,10 +3,8 @@ import './App.css';
 // import {Route, BrowswerRouter as Router, Link, Switch} from 'react-router-dom'; 
 import Landing from './Landing'; 
 import Projects from './Projects';
-import Contact from './Contact'; 
-
-import './main.css'; 
-
+import Contact from './Contact';
+import './main.css';
 
 
 function App() {
@@ -22,12 +20,10 @@ function App() {
     //   </React.Fragment>
     // </Router>
 
-    
-      
       <React.Fragment>
-      <Landing />
-      <Projects />
-      <Contact />
+          <Landing />
+          <Projects />
+          <Contact />
       </React.Fragment>
       
     
