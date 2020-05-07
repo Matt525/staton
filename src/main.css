@@ -3871,7 +3871,13 @@ input, select, textarea {
 		top: 0;
 		visibility: visible;
 		width: 100%;
-		z-index: 10002;
+		z-index: 10002!important;
+	}
+
+	.visible { 
+		visibility: visible!important;
+		
+
 	}
 
 		#menu .inner {
@@ -3891,6 +3897,7 @@ input, select, textarea {
 			text-align: center;
 			visibility: visible;
 			width: 18em;
+			height: 100%!important;
 		}
 
 			#menu .inner > :first-child {
@@ -3989,6 +3996,7 @@ input, select, textarea {
 
 	body.is-ie #menu {
 		background: rgba(42, 47, 74, 0.975);
+		height: 100vh!important;
 	}
 
 	body.is-menu-visible #wrapper {
@@ -3996,12 +4004,14 @@ input, select, textarea {
 		-webkit-filter: blur(0.5em);
 		-ms-filter: blur(0.5em);
 		filter: blur(0.5em);
+		height: 100vh!important;
 	}
 
 	body.is-menu-visible #menu {
 		pointer-events: auto;
 		opacity: 1;
 		visibility: visible;
+		height: 100vh!important;
 	}
 
 		body.is-menu-visible #menu .inner {
@@ -4012,5 +4022,3 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
-
-

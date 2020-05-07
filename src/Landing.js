@@ -2,18 +2,20 @@ import React from 'react';
 import './main.css'; 
 import './carousel.scss';
 import $ from 'jquery'; 
+import Toggle from './Toggle';
+import FullscreenNav from './FullscreenNav'; 
 
 
 class Landing extends React.Component{
+
     constructor(props){
         super(props)
-        console.log($('#header'));
-
         let navbar = $('#header');
         let menu = document.getElementById('nav-menu');
         let windowPos = window.scrollY;
         let navbarTop = navbar.offSetTop; 
         let scrolled = windowPos> navbarTop;
+<<<<<<< HEAD
 
         if(scrolled){
             navbar.addClass('fixed');
@@ -30,14 +32,24 @@ class Landing extends React.Component{
      openNav = () =>{
         document.getElementById('menu').style.visibility = 'visible'; 
     }
+=======
+        this.openNav = this.openNav.bind(this); 
+        
+        // state for fullscreen modal
+        this.state = { 
+            isFull: false,
+        }
+>>>>>>> refs/remotes/origin/master
 
      closeNav = () => { 
         document.getElementById('menu').style.visibility = 'hidden'; 
 
     }
+     openNav = (e) =>{
+         e.preventDefault(); 
+        document.getElementById('menu').classList.toggle('visible'); 
 
-  
-
+    }
 
     render(){
         
@@ -45,17 +57,58 @@ class Landing extends React.Component{
         return(
             <div id="wrapper">
 
-            {/* <!-- Header --> */}
+                {/* Nav Overlay */}
+
+
+                    <Toggle render={({on, toggle})=> (
+                        
+                        <div>
+                    
+                                {on && <FullscreenNav toggle={toggle} />}
+
+                                           {/* <!-- Header --> */}
                 <header id="header" className="reveal alt fixed">
+<<<<<<< HEAD
                     <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
                      {/* Right Nav Menu */}
                     <nav onClick={this.openNav} id="nav-menu">
                         <a href="#menu">Menu</a>
                     </nav>
                 </header>
+=======
+                        <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
 
-            {/* <!-- Menu --> */}
+
+
+                                {/* Right Nav Menu Button */}
+                                <nav id="nav-menu">
+                                    <a href="#menu" onClick={toggle}>Menu</a>
+                                </nav>
+                            </header>
+
+                        </div>
+                    
+                    )
+
+
+
+                }
+
+>>>>>>> refs/remotes/origin/master
+
                 
+                />
+               
+                                
+
+
+ 
+                        
+            {/* <!-- Menu --> */}
+
+
+
+                             
 
             {/* <!-- Banner --> */}
                 <section id="banner" className="major" style={{backgroundPosition: 'center 0px'}}>
@@ -66,18 +119,10 @@ class Landing extends React.Component{
 
                         </header>
 
-                    <nav id="menu">
-						<ul class="links">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
-					</nav>
+
+            
+
+
 
 
         <div className="content">

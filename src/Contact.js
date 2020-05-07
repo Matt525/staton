@@ -2,8 +2,6 @@ import React from 'react';
 import './main.css'; 
 
 
-
-
 export default class Contact extends React.Component{  
     render(){ 
         return(
@@ -51,9 +49,9 @@ export default class Contact extends React.Component{
 									<div class="contact-method">
 										<span class="icon solid alt fa-home"></span>
 										<h3>Address</h3>
-										<span>1234 Somewhere Road #5432<br />
-										Nashville, TN 00000<br />
-										United States of America</span>
+										<span>1524 Kemper Avenue<br />
+										James Island, SC 29412<br />
+										USA</span>
 									</div>
 								</section>
 							</section>
