@@ -14,7 +14,7 @@ class Landing extends React.Component{
         let windowPos = window.scrollY;
         let navbarTop = navbar.offSetTop; 
         let scrolled = windowPos> navbarTop;
-        
+
         if(scrolled){
             navbar.addClass('fixed');
         }
@@ -22,16 +22,17 @@ class Landing extends React.Component{
             navbar.removeClass('fixed');
         }
 
-        let openNav = (e) =>{
-            e.preventDefault(); 
-            document.getElementById('menu').style.visibility = 'visible'; 
-        }
+        this.openNav = this.openNav.bind(this); 
 
-        let closeNav = () => { 
-            document.getElementById('menu').style.visibility = 'hidden'; 
- 
-        }
+    }
 
+
+     openNav = () =>{
+        document.getElementById('menu').style.visibility = 'visible'; 
+    }
+
+     closeNav = () => { 
+        document.getElementById('menu').style.visibility = 'hidden'; 
 
     }
 
@@ -48,7 +49,7 @@ class Landing extends React.Component{
                 <header id="header" className="reveal alt fixed">
                     <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
                      {/* Right Nav Menu */}
-                    <nav onClick="openNav()" id="nav-menu">
+                    <nav onClick={this.openNav} id="nav-menu">
                         <a href="#menu">Menu</a>
                     </nav>
                 </header>

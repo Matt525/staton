@@ -25,6 +25,7 @@ function App() {
     
       
       <React.Fragment>
+      {/* <navOverlay /> */}
       <Landing />
       <Projects />
       <Contact />
