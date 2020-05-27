@@ -3872,6 +3872,7 @@ input, select, textarea {
 		visibility: visible;
 		width: 100%;
 		z-index: 10002!important;
+		
 	}
 
 	.visible { 
@@ -3898,6 +3899,8 @@ input, select, textarea {
 			visibility: visible;
 			width: 18em;
 			height: 100%!important;
+			z-index: 100!important;
+			
 		}
 
 			#menu .inner > :first-child {
@@ -3915,10 +3918,14 @@ input, select, textarea {
 			#menu ul.links {
 				list-style: none;
 				padding: 0;
+				
 			}
 
 				#menu ul.links > li {
 					padding: 0;
+					z-index: inherit;
+					cursor: pointer;
+					
 				}
 
 					#menu ul.links > li > a:not(.button) {
@@ -3936,6 +3943,7 @@ input, select, textarea {
 					#menu ul.links > li > .button {
 						display: block;
 						margin: 0.5em 0 0 0;
+						
 					}
 
 					#menu ul.links > li:first-child > a:not(.button) {
@@ -3997,6 +4005,7 @@ input, select, textarea {
 	body.is-ie #menu {
 		background: rgba(42, 47, 74, 0.975);
 		height: 100vh!important;
+		
 	}
 
 	body.is-menu-visible #wrapper {

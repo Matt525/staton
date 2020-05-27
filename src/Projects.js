@@ -18,6 +18,7 @@ export default class Projects extends React.Component{
 										<p>Weather API Application pulling data by location.</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(./weatherImage.jpeg)!important'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="./rgb.jpeg" alt="" />
@@ -27,6 +28,7 @@ export default class Projects extends React.Component{
 										<p>feugiat amet tempus</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="images/pic03.jpg" alt="" />
@@ -36,6 +38,7 @@ export default class Projects extends React.Component{
 										<p>Lorem etiam nullam</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="images/pic03.jpg" alt="" />
@@ -45,6 +48,17 @@ export default class Projects extends React.Component{
 										<p>Lorem etiam nullam</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
+								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)', width: '100vw'}}>
+									<span className="image" style={{display: 'none'}}>
+										<img src="/images/pic01.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								<a href="landing.html" className="link primary"></a></article>
+
 							
 			
 							</section>

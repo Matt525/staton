@@ -15,41 +15,14 @@ class Landing extends React.Component{
         let windowPos = window.scrollY;
         let navbarTop = navbar.offSetTop; 
         let scrolled = windowPos> navbarTop;
-<<<<<<< HEAD
-
-        if(scrolled){
-            navbar.addClass('fixed');
-        }
-        else{ 
-            navbar.removeClass('fixed');
-        }
-
-        this.openNav = this.openNav.bind(this); 
-
-    }
-
-
-     openNav = () =>{
-        document.getElementById('menu').style.visibility = 'visible'; 
-    }
-=======
-        this.openNav = this.openNav.bind(this); 
+        
         
         // state for fullscreen modal
         this.state = { 
             isFull: false,
         }
->>>>>>> refs/remotes/origin/master
-
-     closeNav = () => { 
-        document.getElementById('menu').style.visibility = 'hidden'; 
-
     }
-     openNav = (e) =>{
-         e.preventDefault(); 
-        document.getElementById('menu').classList.toggle('visible'); 
-
-    }
+  
 
     render(){
         
@@ -68,14 +41,6 @@ class Landing extends React.Component{
 
                                            {/* <!-- Header --> */}
                 <header id="header" className="reveal alt fixed">
-<<<<<<< HEAD
-                    <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
-                     {/* Right Nav Menu */}
-                    <nav onClick={this.openNav} id="nav-menu">
-                        <a href="#menu">Menu</a>
-                    </nav>
-                </header>
-=======
                         <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
 
 
@@ -94,7 +59,6 @@ class Landing extends React.Component{
 
                 }
 
->>>>>>> refs/remotes/origin/master
 
                 
                 />
