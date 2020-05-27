@@ -6,19 +6,18 @@ import Projects from './Projects';
 import Contact from './Contact';
 import './main.css';
 
-
 function App() {
 
 
   return (
     
-    // <Router>
+    // <BrowserRouter>
     //   <React.Fragment>
     //     <Route path="/" component={Home} />
     //     <Route path="/about" component={Contact} />
     //     <Route path="/user" component={} />
     //   </React.Fragment>
-    // </Router>
+    // </BrowserRouter>
 
       <React.Fragment>
           <Landing />
