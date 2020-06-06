@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-// import {Route, BrowswerRouter as Router, Link, Switch} from 'react-router-dom'; 
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Landing from './Landing'; 
 import Projects from './Projects';
 import Contact from './Contact';
@@ -10,22 +10,41 @@ function App() {
 
 
   return (
-    
-    // <BrowserRouter>
-    //   <React.Fragment>
-    //     <Route path="/" component={Home} />
-    //     <Route path="/about" component={Contact} />
-    //     <Route path="/user" component={} />
-    //   </React.Fragment>
-    // </BrowserRouter>
 
-      <React.Fragment>
-          <Landing />
-          <Projects />
-          <Contact />
-      </React.Fragment>
-      
     
+    
+
+            <Router>
+
+                    <Route exact path='/'>
+                        <Landing />               
+                        <Projects />
+                        <Contact />
+                    </Route>
+
+  
+                   <Route path="/faq" component={()=>{window.location = "https://www.google.com"}} />
+
+            
+
+  {/*   
+
+                    <Route path="/projects/rgb_app">
+                      <RgbApp />
+                    </Route>
+
+                    <Route path="/projects/ecommerce_app">
+                      <EcommerceApp />
+                    </Route>
+
+                    <Route path="/projects/patatap_app">
+                      <PatatapApp />
+                    </Route> */}
+
+                    
+
+            </Router>
+      
     
  
   );

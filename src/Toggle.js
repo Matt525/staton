@@ -20,6 +20,7 @@ export default class Toggle extends React.Component {
     render() { 
         
 
+
         // Setting props to the variable of render;
         const {render} = this.props; 
 

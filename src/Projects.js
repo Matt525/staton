@@ -14,19 +14,21 @@ export default class Projects extends React.Component{
 										<img href="https://musing-morse-5eaa60.netlify.com" src="../src/rgb.jpeg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="https://musing-morse-5eaa60.netlify.com" className="link">Weather Application</a></h3>
+										<h3><a href="/faq" className="link">Weather Application</a></h3>
 										<p>Weather API Application pulling data by location.</p>
 									</header>
-								<a href="landing.html" className="link primary"></a></article>
+								<a href="/faq" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(./weatherImage.jpeg)!important'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="./rgb.jpeg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Tempus</a></h3>
+										<h3><a href="www.google.com" className="link">Tempus</a></h3>
 										<p>feugiat amet tempus</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="images/pic03.jpg" alt="" />
@@ -36,6 +38,7 @@ export default class Projects extends React.Component{
 										<p>Lorem etiam nullam</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
 								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
 									<span className="image" style={{display: 'none'}}>
 										<img src="images/pic03.jpg" alt="" />
@@ -45,6 +48,17 @@ export default class Projects extends React.Component{
 										<p>Lorem etiam nullam</p>
 									</header>
 								<a href="landing.html" className="link primary"></a></article>
+
+								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)', width: '100vw'}}>
+									<span className="image" style={{display: 'none'}}>
+										<img src="/images/pic01.jpg" alt="" />
+									</span>
+									<header className="major">
+										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								<a href="landing.html" className="link primary"></a></article>
+
 							
 			
 							</section>

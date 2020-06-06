@@ -8,6 +8,21 @@ import FullscreenNav from './FullscreenNav';
 
 class Landing extends React.Component{
 
+    constructor(props){
+        super(props)
+        let navbar = $('#header');
+        let menu = document.getElementById('nav-menu');
+        let windowPos = window.scrollY;
+        let navbarTop = navbar.offSetTop; 
+        let scrolled = windowPos> navbarTop;
+        
+        
+        // state for fullscreen modal
+        this.state = { 
+            isFull: false,
+        }
+    }
+  
 
     render(){
         
