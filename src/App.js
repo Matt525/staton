@@ -22,24 +22,24 @@ function App() {
                         <Contact />
                     </Route>
 
+                                            {/* P r o j e c t  -  R o u t e s */}
   
-                   <Route path="/faq" component={()=>{window.location = "https://www.google.com"}} />
+                            <Route path="/projects/patatap" component={()=>{window.location = "https://suspicious-heyrovsky-63d4b0.netlify.app/"}} />
 
-            
+                            <Route path="/projects/rgb_app" component={()=>{window.location = "https://matt525.github.io/RGBColorGame/" }} />
 
-  {/*   
+                            <Route path="/projects/breakout" component={()=>{window.location = "https://pensive-mccarthy-649681.netlify.app" }} />
 
-                    <Route path="/projects/rgb_app">
-                      <RgbApp />
-                    </Route>
 
+{/*   
                     <Route path="/projects/ecommerce_app">
                       <EcommerceApp />
                     </Route>
 
                     <Route path="/projects/patatap_app">
                       <PatatapApp />
-                    </Route> */}
+                    </Route> 
+*/}
 
                     
 

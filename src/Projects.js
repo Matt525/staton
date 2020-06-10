@@ -17,7 +17,8 @@ export default class Projects extends React.Component{
 										<h3><a href="/faq" className="link">Weather Application</a></h3>
 										<p>Weather API Application pulling data by location.</p>
 									</header>
-								<a href="/faq" className="link primary"></a></article>
+									<a href="/faq" className="link primary"></a>
+								</article>
 
 								<article style={{backgroundImage: 'url(./weatherImage.jpeg)!important'}}>
 									<span className="image" style={{display: 'none'}}>
@@ -27,9 +28,10 @@ export default class Projects extends React.Component{
 										<h3><a href="www.google.com" className="link">Tempus</a></h3>
 										<p>feugiat amet tempus</p>
 									</header>
-								<a href="landing.html" className="link primary"></a></article>
+									<a href="landing.html" className="link primary"></a>
+								</article>
 
-								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
+								<article>
 									<span className="image" style={{display: 'none'}}>
 										<img src="images/pic03.jpg" alt="" />
 									</span>
@@ -44,10 +46,11 @@ export default class Projects extends React.Component{
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<h3><a href="/projects/breakout" className="link">Magna</a></h3>
 										<p>Lorem etiam nullam</p>
 									</header>
-								<a href="landing.html" className="link primary"></a></article>
+									<a href="landing.html" className="link primary"></a>
+								</article>
 
 								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)', width: '100vw'}}>
 									<span className="image" style={{display: 'none'}}>

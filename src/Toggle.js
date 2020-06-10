@@ -12,10 +12,17 @@ export default class Toggle extends React.Component {
         this.toggle = this.toggle.bind(this); 
     }
 
+    
+    
+    
     toggle = () =>{
         // opposite of the current state of 'show'
         this.setState({on: !this.state.on});
     }
+
+
+
+
     
     render() { 
         
