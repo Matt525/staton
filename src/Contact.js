@@ -4,8 +4,8 @@ import './main.css';
 
 export default class Contact extends React.Component{  
     render(){ 
-        return(
 
+        return(
             <section id="contact">
 						<div class="inner">
 							<section>
@@ -58,8 +58,10 @@ export default class Contact extends React.Component{
 						</div>
 					</section>
 
-
-
         )
     }
 }
+
+
+
+// Use EmailJS API to send email from form //

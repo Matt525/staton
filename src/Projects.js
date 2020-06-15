@@ -7,66 +7,60 @@ export default class Projects extends React.Component{
         return(
             <div id="main">
 
-						{/* <!-- One --> */}
+									{/* Weather Application  */}
+
 							<section id="one" className="tiles">
 								<article style={{backgroundImage: 'url(&quot;images/pic01.jpg&quot)'}}>
-									<span className="image" style={{display: 'none'}}>
-										<img href="https://musing-morse-5eaa60.netlify.com" src="../src/rgb.jpeg" alt="" />
-									</span>
 									<header className="major">
-										<h3><a href="/faq" className="link">Weather Application</a></h3>
+										<h3><a href="/projects/weather_application" className="link">Weather Application</a></h3>
 										<p>Weather API Application pulling data by location.</p>
 									</header>
-									<a href="/faq" className="link primary"></a>
+									<a href="/projects/weather_application" className="link primary"></a>
 								</article>
+
+												{/* RGB Game Application  */}
 
 								<article style={{backgroundImage: 'url(./weatherImage.jpeg)!important'}}>
-									<span className="image" style={{display: 'none'}}>
-										<img src="./rgb.jpeg" alt="" />
-									</span>
 									<header className="major">
-										<h3><a href="www.google.com" className="link">Tempus</a></h3>
+										<h3><a href="/projects/rgb_app" className="link">Tempus</a></h3>
 										<p>feugiat amet tempus</p>
 									</header>
-									<a href="landing.html" className="link primary"></a>
+									<a href="/projects/rgb_app" className="link primary"></a>
 								</article>
+
+										{/* Patatap Application  */}
 
 								<article>
-									<span className="image" style={{display: 'none'}}>
-										<img src="images/pic03.jpg" alt="" />
-									</span>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<h3><a href="/projects/patatap" className="link">Magna</a></h3>
 										<p>Lorem etiam nullam</p>
 									</header>
-								<a href="landing.html" className="link primary"></a></article>
-
-								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
-									<span className="image" style={{display: 'none'}}>
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<header className="major">
-										<h3><a href="/projects/breakout" className="link">Magna</a></h3>
-										<p>Lorem etiam nullam</p>
-									</header>
-									<a href="landing.html" className="link primary"></a>
+								<a href="/projects/patatap" className="link primary"></a>
 								</article>
 
-								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)', width: '100vw'}}>
-									<span className="image" style={{display: 'none'}}>
-										<img src="/images/pic01.jpg" alt="" />
-									</span>
+											{/*  Breakout Game Application  */}
+
+								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)'}}>
 									<header className="major">
-										<h3><a href="landing.html" className="link">Magna</a></h3>
+										<h3><a href="/projects/breakout	" className="link">Magna</a></h3>
 										<p>Lorem etiam nullam</p>
 									</header>
-								<a href="landing.html" className="link primary"></a></article>
+									<a href="/projects/breakout" className="link primary"></a>
+								</article>
 
-							
+											{/* Ecommerce Web Site */}
+	
+								<article style={{backgroundImage: 'url(&quot;images/pic03.jpg&quot)', width: '100vw'}}>
+									<header className="major">
+										<h3><a href="/projects/ecommerce" className="link">Magna</a></h3>
+										<p>Lorem etiam nullam</p>
+									</header>
+								<a href="/projects/ecommerce" className="link primary"></a></article>
 			
 							</section>
 
-						{/* <!-- Two --> */}
+						{/* <!-- 
+						Section Two --> */}
 							<section id="two">
 								<div className="inner">
 									<header className="major">
@@ -83,4 +77,7 @@ export default class Projects extends React.Component{
         )
     }
 }
+
+
+
 

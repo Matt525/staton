@@ -30,18 +30,10 @@ function App() {
 
                             <Route path="/projects/breakout" component={()=>{window.location = "https://pensive-mccarthy-649681.netlify.app" }} />
 
-
-{/*   
-                    <Route path="/projects/ecommerce_app">
-                      <EcommerceApp />
-                    </Route>
-
-                    <Route path="/projects/patatap_app">
-                      <PatatapApp />
-                    </Route> 
-*/}
-
-                    
+                            <Route path="/projects/weather_application" component={()=>{window.location = "https://musing-morse-5eaa60.netlify.app" }} />
+                            
+                            <Route path="/projects/ecommerce" component={()=>{window.location = "https://pensive-mccarthy-649681.netlify.app" }} />
+                            
 
             </Router>
       
