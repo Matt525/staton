@@ -2816,12 +2816,6 @@ input, select, textarea {
 				width: 100%;
 				z-index: 1;
 				color: blue!important
-				
-				#one > article:nth-child(1) > a:hover { 
-					color
-	: blue!important;
-				};
-				
 			}
 
 			.tiles article:hover:before {
@@ -4045,7 +4039,7 @@ input, select, textarea {
 			opacity: 0.25!important;
 			background-position: center;
 			z-index: 1000;
-			zoom: 0.75!important;
+			zoom: 1.075!important;
 			color: white;
 		}
 		#one > article:nth-child(2) > a:hover { 
@@ -4053,7 +4047,7 @@ input, select, textarea {
 			opacity: 0.25!important;
 			background-position: center;
 			z-index: 1000;
-			zoom: 0.75!important;
+			zoom: 1.075!important;
 			color: white;
 		}
 		#one > article:nth-child(3) > a:hover { 
@@ -4061,7 +4055,7 @@ input, select, textarea {
 			opacity: 0.25!important;
 			background-position: center;
 			z-index: 1000;
-			zoom: 0.75!important;
+			zoom: 1.075!important;
 			color: white;
 		}
 		#one > article:nth-child(4) > a:hover { 
@@ -4069,14 +4063,22 @@ input, select, textarea {
 			opacity: 0.25!important;
 			background-position: center;
 			z-index: 1000;
-			zoom: 0.75!important;
+			zoom: 1.075!important;
 			color: white;
 		}
+
+		#one > article:nth-child(5) > a{
+			background-image: url(../src/shopping.jpeg);
+			background-position: center;
+			z-index: 2;
+		}
 		#one > article:nth-child(5) > a:hover { 
-			background-image: url(../src/clouds.jpeg);
+			background-image: url(../src/shopping.jpeg);
 			opacity: 0.25!important;
 			background-position: center;
 			z-index: 1000;
-			zoom: 0.75!important;
+			zoom: 1.075!important;
 			color: white;
 		}
+
+	
