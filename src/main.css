@@ -2929,9 +2929,56 @@ input, select, textarea {
 			top: 0;
 		}
 
+
+
+
 		.contact-method h3 {
 			margin: 0 0 0.5em 0;
 		}
+
+
+		/* Contact Form Mobile View */
+
+		@media screen and (max-width: 480px){
+		#contact > div > section:nth-child(1) > form{
+			width: 75vw!important;
+			margin: 0%!important;
+			padding: 0%!important;
+		}
+
+		/* UL containing buttons */
+		#contact > div > section:nth-child(1) > form > ul{
+			flex-direction: column;
+			margin: 25%;
+			
+		}
+		/* Clear button */
+		#contact > div > section:nth-child(1) > form > ul > li:nth-child(2) > input[type=reset]{
+			width: 227px!important;
+		}
+		
+		#two > div > header > h2{
+			font-size: 20px!important;
+			margin-left: 0%;
+		}
+		#two > div > ul > li{
+			margin-left: 10%;
+		}
+
+		#contact > div > section.split{
+			margin-left: 15%;
+		}
+		#header > a{
+			margin: 5% 0% 5% 0%!important;
+			
+		}
+		#two > div > ul > li > a{
+			width: 275px!important;
+		}
+	}
+
+	/* Contact Form Mobile View END */
+
 
 /* Spotlights */
 
@@ -3201,15 +3248,18 @@ input, select, textarea {
 				line-height: inherit;
 				padding: 0 0.75em;
 				position: relative;
+			}
+			#nav-menu{
+				display: table;
 				vertical-align: middle;
 			}
-
 				#header nav a:last-child {
 					padding-right: 1.5em;
 				}
 
 				#header nav a[href="#menu"] {
 					padding-right: 3.325em !important;
+					padding-top: 12px;
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
@@ -3225,6 +3275,7 @@ input, select, textarea {
 						top: 0;
 						vertical-align: middle;
 						width: 24px;
+						
 					}
 
 					#header nav a[href="#menu"]:after {
@@ -3245,10 +3296,7 @@ input, select, textarea {
 						padding-right: 3.875em !important;
 					}
 
-						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-							right: 2em;
-						}
-
+					
 		#header.reveal {
 			-moz-animation: reveal-header 0.35s ease;
 			-webkit-animation: reveal-header 0.35s ease;
@@ -3873,8 +3921,43 @@ input, select, textarea {
 		visibility: visible;
 		width: 100%;
 		z-index: 10002!important;
+		cursor: pointer;
 		
 	}
+	
+	#overlay-menu{ 
+		-moz-transition: -moz-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		-webkit-transition: -webkit-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		-ms-transition: -ms-transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		transition: transform 0.35s ease, opacity 0.35s ease, visibility 0.35s;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		flex-direction: column;
+		background: rgba(36, 41, 67, 0.9);
+		box-shadow: none;
+		height: 100%;
+		left: 0;
+		opacity: 1;
+		padding: 3em 2em;
+		top: 0;
+		visibility: visible;
+		width: 100%;
+		z-index: 1000000000!important;
+		cursor: pointer;
+		overflow: hidden;
+		position: absolute!important;
+	}
+	
 
 	.visible { 
 		visibility: visible!important;
@@ -3925,7 +4008,8 @@ input, select, textarea {
 				#menu ul.links > li {
 					padding: 0;
 					z-index: inherit;
-					cursor: pointer;
+					cursor: pointer!important;
+					z-index: 10000!important;
 					
 				}
 
@@ -3939,12 +4023,15 @@ input, select, textarea {
 						line-height: 4em;
 						text-decoration: none;
 						text-transform: uppercase;
+						cursor: pointer;
+						
 					}
 
 					#menu ul.links > li > .button {
 						display: block;
 						margin: 0.5em 0 0 0;
-						
+						cursor: pointer;
+						width: 200px;
 					}
 
 					#menu ul.links > li:first-child > a:not(.button) {

@@ -38,18 +38,19 @@ class Landing extends React.Component{
                         <div>
                     
                                 {on && <FullscreenNav toggle={toggle} />}
+                                
 
-                                           {/* <!-- Header --> */}
-                <header id="header" className="reveal alt fixed">
-                        <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
+                                                            {/* <!-- Header --> */}
+                                                <header id="header" className="reveal alt fixed">
+                                                    <a href="index.html" className="logo"><strong>Matthew</strong> <span>Front-End Developer</span></a>
 
 
 
-                                {/* Right Nav Menu Button */}
-                                <nav id="nav-menu">
-                                    <a href="#menu" onClick={toggle}>Menu</a>
-                                </nav>
-                            </header>
+                                                            {/* Right Nav Menu Button */}
+                                                    <nav id="nav-menu">
+                                                        <a href="#menu" onClick={toggle}>Menu</a>
+                                                    </nav>
+                                                </header>
 
                         </div>
                     
