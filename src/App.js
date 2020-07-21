@@ -22,17 +22,18 @@ function App() {
                         <Contact />
                     </Route>
 
-                                            {/* P r o j e c t  -  R o u t e s */}
+                                                                                        {/* P r o j e c t  -  R o u t e s */}
   
-                            <Route path="/projects/patatap" component={()=>{window.location = "https://suspicious-heyrovsky-63d4b0.netlify.app/"}} />
+                           
+                                            <Route path="/projects/patatap" component={()=>{window.location.href = "https://suspicious-heyrovsky-63d4b0.netlify.app/"; return null;}} />
 
-                            <Route path="/projects/rgb_app" component={()=>{window.location = "https://matt525.github.io/RGBColorGame/" }} />
+                                            <Route path="/projects/rgb_app" component={()=>{window.location.href = "https://matt525.github.io/RGBColorGame/"; return null;}} />
 
-                            <Route path="/projects/breakout" component={()=>{window.location = "https://pensive-mccarthy-649681.netlify.app" }} />
+                                            <Route path="/projects/breakout" component={()=>{window.location.href = "https://pensive-mccarthy-649681.netlify.app"; return null; }} />
 
-                            <Route path="/projects/weather_application" component={()=>{window.location = "https://musing-morse-5eaa60.netlify.app" }} />
-                            
-                            <Route path="/projects/ecommerce" component={()=>{window.location = "https://pensive-mccarthy-649681.netlify.app" }} />
+                                            <Route path="/projects/weather_application" component={()=>{window.location.href = "https://musing-morse-5eaa60.netlify.app"; return null; }} />
+
+                                            <Route path="/projects/ecommerce" component={()=>{window.location.href = "https://friendly-jackson-9dc8dc.netlify.app/"; return null; }} />
                             
 
             </Router>
