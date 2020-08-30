@@ -2760,7 +2760,7 @@ input, select, textarea {
 			min-height: 23em;
 			overflow: hidden;
 			position: relative;
-			width: 40%;
+			width: 50%!important;
 		}
 
 			.tiles article .image {
@@ -2780,13 +2780,15 @@ input, select, textarea {
 					color: inherit !important;
 				}
 
+			
+
 			.tiles article .link.primary {
 				border: 0;
 				height: 100%;
 				left: 0;
 				position: absolute;
 				top: 0;
-				width: 100%;
+				width: auto!important;
 				z-index: 4;
 			}
 
@@ -2821,7 +2823,7 @@ input, select, textarea {
 			.tiles article:hover:before {
 				opacity: 0;
 			}
-
+		
 			.tiles article.is-transitioning {
 				-moz-transform: scale(0.95);
 				-webkit-transform: scale(0.95);
@@ -2838,43 +2840,153 @@ input, select, textarea {
 				width: 60%;
 			}
 
+			.tiles article:nth-child(6n - 6):before {
+				background-image: url('./music.jpeg');
+				background-position: center;
+			}
+
 			.tiles article:nth-child(6n - 5):before {
-				background-image: url('./weatherImage.jpeg');
+				background-image: url('./sign_up_app.PNG');
 				background-position: left;
+				zoom: 2;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-image: url('./rgb.jpeg');
-				background-position: bottom;
+				background-image: url('./shopping.jpeg');
+				background-position: center;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-image: url('./music.jpeg');
+				background-image: url('./secondBanner.png');
+				background-position: left;
+
+			}
+			
+			.tiles article:nth-child(6n - 2):before {
+				background-image: url('./weatherImage.jpeg');
 				background-position: center;
 
 			}
 
-			.tiles article:nth-child(6n - 2):before {
-				background-image: url('./gaming.jpeg');
-				background-position: top;
+			.tiles article:nth-child(6n - 1):before {
+				background-image: url('./rgb.jpeg');
+				background-position: center;
 				background-size: cover;
 			}
 
-			.tiles article:nth-child(6n - 1):before {
-				background-color: #8ea9e8;
+			#one > article:nth-child(7):before{
+				background-image: url('./gaming.jpeg');
+
+			}
+			#one > article:nth-child(7):after{
+				background-image: url('./gaming.jpeg');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+
 			}
 
-			.tiles article:nth-child(6n):before {
-				background-color: #87c5a4;
+
+			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
+				width: 60%;
 			}
+			.tiles article:nth-child(6n - 6):hover:after {
+				background-image: url('./shopping.jpeg');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+
+
+			}
+
+			.tiles article:nth-child(6n - 5):hover:after {
+				background-image: url('./sign_up_app.PNG');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+			}
+
+			.tiles article:nth-child(6n - 4):hover:after {
+				background-image: url('./shopping.jpeg');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+			}
+
+			.tiles article:nth-child(6n - 3):hover:after {
+				background-image: url('./rgb.jpeg');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+
+			}
+			
+			.tiles article:nth-child(6n - 2):hover:after {
+				background-image: url('./weatherImage.jpeg');
+				background-position: center;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+
+			}
+
+			.tiles article:nth-child(6n - 1):hover:after {
+				background-image: url('./rgb.jpeg');
+				background-position: top;
+				background-size: cover;
+				transform: scale(1.95);
+				-moz-filter: blur(0.5em);
+				-webkit-filter: blur(0.5em);
+				-ms-filter: blur(0.2em);
+			}
+
+
+			.btn { 
+				border-radius: 0!important;
+				background-color: #242943!important;
+			}
+			
+			#main > .moreProjects{
+				background: #404668!important;
+				animation: slide-bottom 2s ease-in-out infinite;
+			}
+		
+			@keyframes slide-bottom {
+				0% {
+				  -webkit-transform: translateY(0);
+						  transform: translateY(0);
+				}
+				50% {
+				  -webkit-transform: translateY(10px);
+						  transform: translateY(10px);
+				}
+
+				
+				100% {
+				  -webkit-transform: translateY(0px);
+						  transform: translateY(0px);
+				}
+
+
+			  }
+
 
 		@media screen and (max-width: 1280px) {
 
 			.tiles article {
-				padding: 4em 3em 2em 3em ;
-				height: 30vh;
-				max-height: 30em;
-				min-height: 20em;
+
+				width: 30%;
 			}
 
 		}
@@ -4168,4 +4280,27 @@ input, select, textarea {
 			color: white;
 		}
 
-	
+		.pButton { 
+			text-decoration: none!important;
+			color: #fff!important;
+		}
+
+
+
+		#banner > div > ul > li > a { 
+			animation: slide-right 4s infinite ease-in-out;
+
+		}
+
+		@keyframes slide-right {
+			20%, 100% {
+			transform: translate(0px,0);
+			}
+			0% { 
+				transform: translate(0px,0);
+			}
+			10% { 
+				transform: translate(10px,0);
+			}
+		  }
+

@@ -34,6 +34,10 @@ function App() {
                                             <Route path="/projects/weather_application" component={()=>{window.location.href = "https://musing-morse-5eaa60.netlify.app"; return null; }} />
 
                                             <Route path="/projects/ecommerce" component={()=>{window.location.href = "https://friendly-jackson-9dc8dc.netlify.app/"; return null; }} />
+
+                                            <Route path="/projects/sign_up" component={()=>{window.location.href = "https://immense-brook-68010.herokuapp.com/"; return null; }} />
+                                            
+                                            <Route path="/projects/red_cloud" component={()=>{window.location.href = "https://hopeful-lalande-975773.netlify.app"; return null; }} />
                             
 
             </Router>
