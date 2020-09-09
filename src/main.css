@@ -32,6 +32,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	scroll-behavior: smooth!important;
 }
 
 ol, ul {
@@ -2841,70 +2842,57 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 6):before {
-				background-image: url('./music.jpeg');
+				background-image: url('./rgb.jpeg');
 				background-position: center;
 			}
 
 			.tiles article:nth-child(6n - 5):before {
-				background-image: url('./sign_up_app.PNG');
-				background-position: left;
-				zoom: 2;
+				background-image: url('./shopping.jpeg');
+				background-position: center;
+				zoom: 1;
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-image: url('./shopping.jpeg');
+				background-image: url('./realEstate.PNG');
 				background-position: center;
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-image: url('./secondBanner.png');
+				background-image: url('./sign_up_app.PNG');
 				background-position: left;
 
 			}
 			
 			.tiles article:nth-child(6n - 2):before {
-				background-image: url('./weatherImage.jpeg');
-				background-position: center;
+				background-image: url('./secondBanner.png');
+				background-position: left;
 
 			}
 
 			.tiles article:nth-child(6n - 1):before {
-				background-image: url('./rgb.jpeg');
+				background-image: url('./weatherImage.jpeg');
 				background-position: center;
 				background-size: cover;
 			}
 
-			#one > article:nth-child(7):before{
-				background-image: url('./gaming.jpeg');
-
-			}
-			#one > article:nth-child(7):after{
-				background-image: url('./gaming.jpeg');
-				background-position: center;
-				transform: scale(1.95);
-				-moz-filter: blur(0.5em);
-				-webkit-filter: blur(0.5em);
-				-ms-filter: blur(0.2em);
-
-			}
 
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
-			.tiles article:nth-child(6n - 6):hover:after {
-				background-image: url('./shopping.jpeg');
+
+			.tiles article:nth-child(6n - 6)::after {
+				background-image: url('./rgb.jpeg');
 				background-position: center;
 				transform: scale(1.95);
 				-moz-filter: blur(0.5em);
 				-webkit-filter: blur(0.5em);
 				-ms-filter: blur(0.2em);
-
-
 			}
 
+
 			.tiles article:nth-child(6n - 5):hover:after {
-				background-image: url('./sign_up_app.PNG');
+				background-image: url('./rgb.jpeg');
 				background-position: center;
 				transform: scale(1.95);
 				-moz-filter: blur(0.5em);
@@ -2913,16 +2901,18 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 4):hover:after {
-				background-image: url('./shopping.jpeg');
-				background-position: center;
+				background-image: url('./realEstate.PNG');
+				background-position: right;
 				transform: scale(1.95);
 				-moz-filter: blur(0.5em);
 				-webkit-filter: blur(0.5em);
 				-ms-filter: blur(0.2em);
+
 			}
 
+
 			.tiles article:nth-child(6n - 3):hover:after {
-				background-image: url('./rgb.jpeg');
+				background-image: url('./sign_up_app.PNG');
 				background-position: center;
 				transform: scale(1.95);
 				-moz-filter: blur(0.5em);
@@ -2932,7 +2922,7 @@ input, select, textarea {
 			}
 			
 			.tiles article:nth-child(6n - 2):hover:after {
-				background-image: url('./weatherImage.jpeg');
+				background-image: url('./secondBanner.png');
 				background-position: center;
 				transform: scale(1.95);
 				-moz-filter: blur(0.5em);
@@ -2942,7 +2932,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 1):hover:after {
-				background-image: url('./rgb.jpeg');
+				background-image: url('./weatherImage.jpeg');
 				background-position: top;
 				background-size: cover;
 				transform: scale(1.95);
@@ -2952,42 +2942,39 @@ input, select, textarea {
 			}
 
 
-			.btn { 
+			.btn {
 				border-radius: 0!important;
 				background-color: #242943!important;
+				height: 60px;
+				padding: 15px!important;
+			}
+			#main > .moreProjects{ 
+				background-color: #404668!important;
+				animation: slide-bottom 5s ease-in-out infinite;
 			}
 			
-			#main > .moreProjects{
-				background: #404668!important;
-				animation: slide-bottom 2s ease-in-out infinite;
+			#main > .moreProjects:hover{
+				background: #50577e!important;
+				
 			}
 		
 			@keyframes slide-bottom {
-				0% {
-				  -webkit-transform: translateY(0);
-						  transform: translateY(0);
+				20%, 100% {
+				transform: translate(0px,0);
 				}
-				50% {
-				  -webkit-transform: translateY(10px);
-						  transform: translateY(10px);
+				0% { 
+					transform: translate(0px,0);
 				}
-
-				
-				100% {
-				  -webkit-transform: translateY(0px);
-						  transform: translateY(0px);
+				10% { 
+					transform: translate(0px,10px);
 				}
-
-
 			  }
 
+			@media screen and (max-width: 1280px) {
 
-		@media screen and (max-width: 1280px) {
-
-			.tiles article {
-
-				width: 30%;
-			}
+				.tiles article {
+						width: 30%;
+				}
 
 		}
 
@@ -3348,16 +3335,13 @@ input, select, textarea {
 			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			flex-grow: 1;
-			height: inherit;
-			line-height: inherit;
+			
+			
 		}
 
 			#header nav a {
 				border: 0;
 				display: block;
-				font-size: 1.2em;
-				height: inherit;
-				line-height: inherit;
 				padding: 0 0.75em;
 				position: relative;
 			}
@@ -3389,6 +3373,7 @@ input, select, textarea {
 						width: 24px;
 						
 					}
+					
 
 					#header nav a[href="#menu"]:after {
 						-moz-transition: opacity 0.2s ease-in-out;
@@ -3599,6 +3584,7 @@ input, select, textarea {
 		}
 
 		#banner h1 {
+			font-family: inherit!important;
 			font-size: 4.25em;
 			font-weight: 200!important;
 		}
@@ -4303,4 +4289,3 @@ input, select, textarea {
 				transform: translate(10px,0);
 			}
 		  }
-

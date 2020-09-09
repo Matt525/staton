@@ -48,7 +48,7 @@ class Landing extends React.Component{
 
                                                             {/* Right Nav Menu Button */}
                                                     <nav id="nav-menu">
-                                                        <a href="#menu" onClick={toggle}>Menu</a>
+                                                        <a href="#menu" onClick={toggle}></a>
                                                     </nav>
                                                 </header>
 
@@ -107,7 +107,7 @@ class Landing extends React.Component{
         <br />
         
                         <ul className="actions">
-                                <li><a href="#one" className="button next scrolly">My Projects</a></li>
+                                <li id="myProjects"><a href="#one" className="button next scrolly">My Projects</a></li>
                         </ul>
 
                     </div>

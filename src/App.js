@@ -4,7 +4,9 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Landing from './Landing'; 
 import Projects from './Projects';
 import Contact from './Contact';
+import ProjectsPage from './ProjectsPage';
 import './main.css';
+
 
 function App() {
 
@@ -37,8 +39,12 @@ function App() {
 
                                             <Route path="/projects/sign_up" component={()=>{window.location.href = "https://immense-brook-68010.herokuapp.com/"; return null; }} />
                                             
-                                            <Route path="/projects/red_cloud" component={()=>{window.location.href = "https://hopeful-lalande-975773.netlify.app"; return null; }} />
-                            
+                                            <Route path="/projects/red_cloud" component={()=>{window.location.href = "https://kind-ride-de07b5.netlify.app"; return null; }} />
+                                            
+                                            <Route path="/projects/real_estate" component={()=>{window.location.href = "https://jolly-franklin-d98c8d.netlify.app"; return null; }} />
+                                            
+                                            <Route path="/projects_page" component={ProjectsPage} />
+
 
             </Router>
       
