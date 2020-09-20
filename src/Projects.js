@@ -95,7 +95,7 @@ export default class Projects extends React.Component{
 	
 			
 							</section>
-							<a href="localhost:3000/projects_page"  class="moreProjects btn btn-primary btn-lg btn-block">More Projects</a>
+							<a href="/projects_page"  class="moreProjects btn btn-primary btn-lg btn-block">More Projects</a>
 
 
 						{/* <!-- 

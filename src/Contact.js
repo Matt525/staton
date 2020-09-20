@@ -35,7 +35,7 @@ export default class Contact extends React.Component{
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">malanstaton@gmail.com</a>
+										<a href="#">mstaton.dev@gmail.com</a>
 									</div>
 								</section>
 								<section>

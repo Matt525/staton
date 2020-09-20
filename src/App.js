@@ -4,13 +4,12 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Landing from './Landing'; 
 import Projects from './Projects';
 import Contact from './Contact';
-import ProjectsPage from './ProjectsPage';
+import development from './development';
 import './main.css';
+import AboutMe from './AboutMe';
 
 
 function App() {
-
-
   return (
 
     
@@ -41,9 +40,13 @@ function App() {
                                             
                                             <Route path="/projects/red_cloud" component={()=>{window.location.href = "https://kind-ride-de07b5.netlify.app"; return null; }} />
                                             
-                                            <Route path="/projects/real_estate" component={()=>{window.location.href = "https://jolly-franklin-d98c8d.netlify.app"; return null; }} />
+                                            <Route path="/projects/real_estate" component={()=>{window.location.href = "https://epic-bhaskara-e3ba76.netlify.app/"; return null; }} />
                                             
-                                            <Route path="/projects_page" component={ProjectsPage} />
+                                            <Route path="/projects_page" component={development} />
+
+                                            <Route path="/development" component={development} />
+
+                                            <Route path="/aboutme" component={AboutMe} />
 
 
             </Router>
