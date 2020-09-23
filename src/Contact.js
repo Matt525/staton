@@ -25,8 +25,8 @@ export default class Contact extends React.Component{
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Clear" /></li>
+										<li><input onClick={(e)=> {e.preventDefault(); alert("Thank you for reaching out!")}} type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear"/></li>
 									</ul>
 								</form>
 							</section>
@@ -57,7 +57,6 @@ export default class Contact extends React.Component{
 							</section>
 						</div>
 					</section>
-
         )
     }
 }

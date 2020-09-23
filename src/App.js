@@ -7,24 +7,23 @@ import Contact from './Contact';
 import development from './development';
 import './main.css';
 import AboutMe from './AboutMe';
-
+import References from './References';
+import Letter from './Letter';
+import Navigation from './Navigation';
+import { Nav } from 'reactstrap';
 
 function App() {
   return (
 
-    
-    
-
             <Router>
 
                     <Route exact path='/'>
+                        <Navigation />
                         <Landing />               
                         <Projects />
                         <Contact />
                     </Route>
-
-                                                                                        {/* P r o j e c t  -  R o u t e s */}
-  
+                                                                  {/* P r o j e c t  -  R o u t e s */}
                            
                                             <Route path="/projects/patatap" component={()=>{window.location.href = "https://suspicious-heyrovsky-63d4b0.netlify.app/"; return null;}} />
 
@@ -46,8 +45,20 @@ function App() {
 
                                             <Route path="/development" component={development} />
 
-                                            <Route path="/aboutme" component={AboutMe} />
+                                            <Route path="/aboutme">
+                                                  <Navigation />
+                                                  <AboutMe/>
+                                            </Route>
 
+                                            <Route path="/references">
+                                                <Navigation/>
+                                                <References/>
+                                            </Route>
+                                            
+                                            <Route path="/letter">
+                                                <Navigation/>
+                                                <Letter/>
+                                            </Route>
 
             </Router>
       
