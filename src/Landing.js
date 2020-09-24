@@ -2,10 +2,6 @@
     import './main.css';
     import './carousel.scss';
     import './landingQueries.scss'
-    
-
-
-
 
     class Landing extends React.Component{
         render(){
@@ -15,7 +11,7 @@
 
                 {/* <!-- Banner --> */}
                     <section id="banner" className="major" style={{backgroundPosition: 'center 0px', fontWeight: '200!important'}}>
-                        
+
                                 <div className="inner">
                                     <header className="major">
                         
